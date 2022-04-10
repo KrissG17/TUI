@@ -12,7 +12,7 @@ void setup(){
   oscP5 = new OscP5(this,12000);
   myRemoteLocation = new NetAddress("127.0.0.1",12001);
   // puertos para lectura de ARDUINO Serial COM3
-  myPort = new Serial(this,Serial.list()[1],9600);
+  myPort = new Serial(this,Serial.list()[0],9600);
   //println(Serial.list());
   myPort.bufferUntil('\n');
 }
